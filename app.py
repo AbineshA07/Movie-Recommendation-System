@@ -4,7 +4,7 @@ import requests
 import pickle
 
 # Load the processed data and similarity matrix
-with open('movie_data.pkl', 'rb') as file:
+with open('"C:\Users\abine\OneDrive\Documents\Python\Project\movie-recommendation-system-main\movie_data.pkl"', 'rb') as file:
     movies, cosine_sim = pickle.load(file)
 
 # Function to get movie recommendations
@@ -46,4 +46,5 @@ if st.button('Recommend'):
                 with col:
                     st.image(poster_url, width=130)
                     st.write(movie_title)
+
 
